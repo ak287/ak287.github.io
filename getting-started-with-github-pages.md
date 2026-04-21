@@ -1,0 +1,64 @@
+---
+title: "Getting Started with GitHub Pages"
+date: "2025-04-15"
+tags: ["GitHub", "Web"]
+readingTime: "4 min read"
+---
+
+GitHub Pages is one of the most underrated tools available to developers. It gives you free, reliable static hosting directly from a repository — no servers, no billing dashboards, no surprise costs.
+
+Here's a practical walkthrough to get your site live in under ten minutes.
+
+## Step 1 — Create your repository
+
+The repository name determines your URL. For a personal site, name it exactly:
+
+```
+yourusername.github.io
+```
+
+Make sure the repository is set to **Public**.
+
+## Step 2 — Add your files
+
+At minimum you need an `index.html` at the root of the repo. Everything else — stylesheets, scripts, images, post folders — is optional and up to you.
+
+```
+your-repo/
+├── index.html
+├── style.css
+└── posts/
+    ├── index.json
+    └── my-first-post.md
+```
+
+## Step 3 — Enable GitHub Pages
+
+Go to your repository → **Settings** → **Pages**. Under *Branch*, select `main` and click **Save**.
+
+Within a minute or two, your site will be live at:
+
+```
+https://yourusername.github.io
+```
+
+## Step 4 — Make changes
+
+Every time you push a commit to the `main` branch, GitHub automatically rebuilds and republishes your site. There's no deploy command to run.
+
+> The feedback loop is tight: write code, push, wait ~30 seconds, refresh.
+
+## Adding blog posts
+
+To add a new post to this site:
+
+1. Create a new `.md` file inside the `posts/` folder
+2. Add front matter at the top (title, date, tags)
+3. Add the post metadata to `posts/index.json`
+4. Push — you're done
+
+That's genuinely it. No CMS, no build tools, no pipelines.
+
+---
+
+GitHub Pages is an elegant solution for personal sites precisely because it stays out of your way. You own every file, every line of CSS, every decision. That's rare.

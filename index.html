@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arunesh Kumar — Portfolio & Blog</title>
+  <meta name="description" content="Personal portfolio and blog." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- marked.js: converts Markdown to HTML in the browser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<nav id="nav">
+  <a class="nav-logo" href="#about" data-section="about">
+    YN<span class="dot">.</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about"   data-section="about"   class="active">About</a></li>
+    <li><a href="#blog"    data-section="blog">Blog</a></li>
+    <li><a href="#contact" data-section="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <!-- ══════════════════════════════════════════
+       ABOUT (default page)
+  ══════════════════════════════════════════ -->
+  <section id="about" class="section active">
+
+    <!-- Intro / hero -->
+    <div class="about-intro">
+      <span class="eyebrow">Developer &amp; Writer</span>
+      <h1 class="page-title">Hi, I'm<br /><em>Your Name.</em></h1>
+      <p class="bio-text">
+        I'm a product and strategy professional with significant experience of operating in Fintech - Lending and Payments.
+      </p>
+      <div class="about-meta">
+        <div class="meta-item">
+          <span class="meta-label">Based in</span>
+          <span class="meta-value">London, UK</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Currently</span>
+          <span class="meta-value">Work-in-progress</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div style="margin-bottom:52px;">
+      <h2 class="sub-heading">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-name">Product</div>
+          <div class="skill-tags">Strategy, Discovery, Scoping, UX, Implementation/ Delivery</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Sectors</div>
+          <div class="skill-tags">B2B and B2C Lending, Banking and Payments</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Basic coding/ scripting</div>
+          <div class="skill-tags">Python, JS, HTML/ CSS, SQL</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Tools/ Platforms</div>
+          <div class="skill-tags">Jira, Confluence, Salesforce, Mambu, nCino</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Functional</div>
+          <div class="skill-tags">Onboarding, KYC/ KYB, Underwriting/ Credit Risk Assessment, Document Generation, Workflow Automation, Operational Optimisation</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">Other</div>
+          <div class="skill-tags">AI (Basics of LLMs)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div>
+      <h2 class="sub-heading">Projects</h2>
+      <div class="projects-list">
+
+        <a class="project-card" href="https://github.com/yourusername/project-alpha" target="_blank" rel="noopener">
+          <span class="project-num">01</span>
+          <div>
+            <div class="project-title">Project Alpha</div>
+            <div class="project-desc">
+              A description of what this project does and the problem it solves.
+              Keep it concise but compelling enough to spark interest.
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Open Source</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/yourusername/project-beta" target="_blank" rel="noopener">
+          <span class="project-num">02</span>
+          <div>
+            <div class="project-title">Project Beta</div>
+            <div class="project-desc">
+              Another project worth highlighting. What technology makes it
+              interesting? What challenge did it solve?
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">API</span>
+              <span class="tag">CLI</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+        <a class="project-card" href="https://github.com/yourusername/project-gamma" target="_blank" rel="noopener">
+          <span class="project-num">03</span>
+          <div>
+            <div class="project-title">Project Gamma</div>
+            <div class="project-desc">
+              Your third featured work. Consider linking to a live demo or
+              describing what you learned building it.
+            </div>
+            <div class="project-tags">
+              <span class="tag">CSS</span>
+              <span class="tag">Animation</span>
+              <span class="tag">Design</span>
+            </div>
+          </div>
+          <span class="project-arrow">↗</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOG
+  ══════════════════════════════════════════ -->
+  <section id="blog" class="section">
+    <span class="eyebrow">Thoughts &amp; writing</span>
+    <h1 class="page-title">Blog</h1>
+    <div class="blog-list" id="blogList">
+      <div class="state-msg">Loading posts…</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="section">
+    <span class="eyebrow">Get in touch</span>
+    <h1 class="page-title">Contact</h1>
+    <p class="contact-intro">
+      Whether you have a project in mind, a question, or just want to say hello —
+      my inbox is always open. I try to respond within a day or two.
+    </p>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <div class="contact-block-label">Email</div>
+        <div class="contact-block-value">
+          <a href="mailto:you@example.com">you@example.com</a>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">GitHub</div>
+        <div class="contact-block-value">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">LinkedIn</div>
+        <div class="contact-block-value">
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-label">Location</div>
+        <div class="contact-block-value">Your City, Country</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════════════════
+     POST VIEW (rendered when reading a post)
+══════════════════════════════════════════ -->
+<div id="post-view">
+  <span class="post-back" id="postBack">Back to Blog</span>
+  <div class="post-header">
+    <span class="eyebrow" id="postEyebrow"></span>
+    <h1 id="postTitle"></h1>
+    <div class="post-info" id="postInfo"></div>
+  </div>
+  <div class="post-body" id="postBody"></div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer>
+  <span>© <span id="year"></span> Your Name</span>
+  <span>Built with <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></span>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+<script>
+/* ── Config ──────────────────────────────────────────────────────────────
+   Update REPO_BASE to your GitHub raw content URL before deploying:
+   https://raw.githubusercontent.com/USERNAME/USERNAME.github.io/main
+   For local development, leave as '.' (relative paths)
+──────────────────────────────────────────────────────────────────────── */
+const REPO_BASE = '.';
+
+/* ── Footer year ──────────────────────────────────────────────────────── */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ── SPA Navigation ───────────────────────────────────────────────────── */
+const sections   = document.querySelectorAll('.section');
+const navLinks   = document.querySelectorAll('.nav-links a');
+const postView   = document.getElementById('post-view');
+const mainEl     = document.getElementById('main');
+const navToggle  = document.getElementById('navToggle');
+const navLinksEl = document.getElementById('navLinks');
+
+function showSection(id) {
+  // hide post view, show main sections
+  postView.style.display = 'none';
+  mainEl.style.display   = 'block';
+
+  sections.forEach(s => s.classList.remove('active'));
+  navLinks.forEach(a => a.classList.remove('active'));
+
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.add('active');
+    // re-trigger animation
+    target.style.animation = 'none';
+    target.offsetHeight; // reflow
+    target.style.animation = '';
+  }
+
+  const activeLink = document.querySelector(`.nav-links a[data-section="${id}"]`);
+  if (activeLink) activeLink.classList.add('active');
+
+  window.scrollTo(0, 0);
+  navLinksEl.classList.remove('open'); // close mobile menu
+}
+
+// click on nav links
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const id = link.dataset.section;
+    history.pushState({ section: id }, '', `#${id}`);
+    showSection(id);
+  });
+});
+
+// logo click
+document.querySelector('.nav-logo').addEventListener('click', e => {
+  e.preventDefault();
+  history.pushState({ section: 'about' }, '', '#about');
+  showSection('about');
+});
+
+// mobile toggle
+navToggle.addEventListener('click', () => {
+  navLinksEl.classList.toggle('open');
+});
+
+// browser back/forward
+window.addEventListener('popstate', e => {
+  const id = e.state?.section || 'about';
+  showSection(id);
+});
+
+// handle direct URL hash on load
+function getInitialSection() {
+  const hash = window.location.hash.replace('#', '');
+  if (hash.startsWith('post/')) return null; // handled by blog loader
+  return hash || 'about';
+}
+
+/* ── Blog — fetch posts/index.json ────────────────────────────────────── */
+async function loadBlogList() {
+  const listEl = document.getElementById('blogList');
+  try {
+    const res = await fetch(`${REPO_BASE}/posts/index.json`);
+    if (!res.ok) throw new Error('Could not load posts/index.json');
+    const posts = await res.json();
+
+    if (!posts.length) {
+      listEl.innerHTML = '<div class="state-msg">No posts yet. Check back soon.</div>';
+      return;
+    }
+
+    listEl.innerHTML = posts.map(post => {
+      const d = new Date(post.date);
+      const day = d.getDate().toString().padStart(2,'0');
+      const mon = d.toLocaleString('default',{month:'short'}).toUpperCase();
+      const yr  = d.getFullYear();
+      return `
+        <div class="blog-card" data-slug="${post.slug}">
+          <div class="blog-date">
+            <span class="day">${day}</span>
+            <span class="mon">${mon} ${yr}</span>
+          </div>
+          <div>
+            <div class="blog-title">${post.title}</div>
+            <div class="blog-excerpt">${post.excerpt}</div>
+            <div class="blog-meta-row">
+              <span>${post.readingTime || estimateReadingTime(post.excerpt)}</span>
+              ${post.tags ? post.tags.map(t=>`<span>${t}</span>`).join('') : ''}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    // click a card → open post
+    listEl.querySelectorAll('.blog-card').forEach(card => {
+      card.addEventListener('click', () => openPost(card.dataset.slug));
+    });
+
+  } catch (err) {
+    listEl.innerHTML = `<div class="state-msg">Failed to load posts. ${err.message}</div>`;
+    console.error(err);
+  }
+}
+
+/* ── Blog — open & render a single post ──────────────────────────────── */
+async function openPost(slug) {
+  history.pushState({ section: 'post', slug }, '', `#post/${slug}`);
+
+  postView.style.animation = 'none';
+  postView.offsetHeight;
+  postView.style.animation = '';
+
+  mainEl.style.display   = 'none';
+  postView.style.display = 'block';
+  window.scrollTo(0, 0);
+
+  navLinks.forEach(a => a.classList.remove('active'));
+  document.querySelector('.nav-links a[data-section="blog"]').classList.add('active');
+
+  document.getElementById('postTitle').textContent = 'Loading…';
+  document.getElementById('postBody').innerHTML    = '';
+  document.getElementById('postInfo').textContent  = '';
+  document.getElementById('postEyebrow').textContent = '';
+
+  try {
+    const res = await fetch(`${REPO_BASE}/posts/${slug}.md`);
+    if (!res.ok) throw new Error(`Post "${slug}" not found.`);
+    const raw = await res.text();
+
+    const { meta, body } = parseFrontMatter(raw);
+    const d = meta.date ? new Date(meta.date) : null;
+    const dateStr = d ? d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}) : '';
+    const readTime = meta.readingTime || estimateReadingTime(body);
+
+    document.getElementById('postEyebrow').textContent  = meta.tags ? meta.tags.join(' · ') : 'Blog';
+    document.getElementById('postTitle').textContent    = meta.title || slug;
+    document.getElementById('postInfo').innerHTML       =
+      `<span>${dateStr}</span><span>${readTime}</span>`;
+    document.getElementById('postBody').innerHTML       = marked.parse(body);
+
+  } catch (err) {
+    document.getElementById('postTitle').textContent = 'Post not found';
+    document.getElementById('postBody').innerHTML    = `<p style="color:var(--muted)">${err.message}</p>`;
+  }
+}
+
+/* ── Back button from post ────────────────────────────────────────────── */
+document.getElementById('postBack').addEventListener('click', () => {
+  history.pushState({ section: 'blog' }, '', '#blog');
+  showSection('blog');
+});
+
+/* ── Helpers ──────────────────────────────────────────────────────────── */
+function parseFrontMatter(raw) {
+  // Expects optional YAML-style front matter between --- delimiters
+  const fm = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!fm) return { meta: {}, body: raw };
+  const meta = {};
+  fm[1].split('\n').forEach(line => {
+    const [key, ...rest] = line.split(':');
+    if (key && rest.length) {
+      let val = rest.join(':').trim().replace(/^["']|["']$/g, '');
+      if (val.startsWith('[') && val.endsWith(']')) {
+        val = val.slice(1,-1).split(',').map(s=>s.trim().replace(/^["']|["']$/g,''));
+      }
+      meta[key.trim()] = val;
+    }
+  });
+  return { meta, body: fm[2] };
+}
+
+function estimateReadingTime(text) {
+  const words = text.trim().split(/\s+/).length;
+  const mins  = Math.max(1, Math.round(words / 200));
+  return `${mins} min read`;
+}
+
+/* ── Initialise ───────────────────────────────────────────────────────── */
+(function init() {
+  const hash = window.location.hash.replace('#','');
+  if (hash.startsWith('post/')) {
+    // deep link directly to a post
+    const slug = hash.replace('post/','');
+    mainEl.style.display = 'none';
+    openPost(slug);
+  } else {
+    showSection(hash || 'about');
+  }
+  loadBlogList(); // pre-fetch blog list in background
+})();
+</script>
+
+</body>
+</html>

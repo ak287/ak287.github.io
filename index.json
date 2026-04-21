@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "getting-started-with-github-pages",
+    "title": "Getting Started with GitHub Pages",
+    "date": "2025-04-15",
+    "excerpt": "A practical walkthrough of setting up a personal site on GitHub Pages — from creating a repo to going live in under ten minutes.",
+    "readingTime": "4 min read",
+    "tags": ["GitHub", "Web"]
+  },
+  {
+    "slug": "the-case-for-vanilla-javascript",
+    "title": "The Case for Vanilla JavaScript",
+    "date": "2025-03-28",
+    "excerpt": "Frameworks are powerful, but sometimes the best tool is the one already built into the browser. Here's why I reach for plain JavaScript more than I used to.",
+    "readingTime": "6 min read",
+    "tags": ["JavaScript", "Opinion"]
+  },
+  {
+    "slug": "writing-as-a-developer",
+    "title": "Writing as a Developer",
+    "date": "2025-02-10",
+    "excerpt": "Writing and coding share more DNA than you'd expect. Both require precision, clarity, and the discipline to cut what doesn't serve the reader.",
+    "readingTime": "5 min read",
+    "tags": ["Writing", "Career"]
+  }
+]
